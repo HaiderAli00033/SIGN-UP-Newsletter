@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 900px;
+    height: 620px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.boxhead strong{
+    font-size: 50px;
+}
+
+.boxpara {
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.points {
+    padding-top: 20px;
+}
+
+.points p {
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    gap: 20px;
+    padding-top: 13px;
+}
+
+.signupbox {
+    padding-top: 50px;
+}
+
+.input {
+    padding-top: 10px;
+}
+
+.input input {
+    height: 45px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+}
+
+.signupbutton {
+    padding-top: 20px;
+}
+
+.signupbox button {
+    height: 45px;
+    width: 300px;
+    border-radius: 7px;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    transition: 0.1ms ease-in;
+}
+
+.signupbox button:hover {
+    background-color: hsl(4, 100%, 67%);
+    cursor: pointer;
+}
+
+.image {
+    display: flex;
+    align-items:center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.mob {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        background-color: transparent;
+    }
+    .box {
+        flex-direction: column-reverse;
+        max-width: 375px;
+        height: auto;
+        border-radius: 0;
+        padding-bottom: 70px;
+    }
+
+    .content {
+        padding-top: 50px;
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .image {
+        align-items: center;
+        padding: 0;
+    }
+
+    .des {
+        display: none;
+    }
+
+    .mob {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .points p {
+        text-align: start;
+    }
+}
+
+
